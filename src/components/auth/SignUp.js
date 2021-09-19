@@ -22,7 +22,7 @@ export default class SignUp extends Component {
         
         return (
         <div className='container' >
-            <form className='white' onSubmit={onsubmit} >
+            <form className='white' onSubmit={this.onsubmit} >
                 <h5 className='grey-text text-darken-3'>Sign In</h5>
                 <div className='input-field'>
                     <label htmlFor='email'>Email</label>
@@ -33,7 +33,15 @@ export default class SignUp extends Component {
                     <input type='password' id='password' onChange={this.handleChange} />
                 </div>
                 <div className='input-field'>
-                    <button className='btn pink lighten-1 z-depth-0'>Login</button>
+                    <label htmlFor='first_name'>First Name</label>
+                    <input type='text' id='first_name' onChange={this.handleChange} />
+                </div>
+                <div className='input-field'>
+                    <label htmlFor='last_name'>Last Name</label>
+                    <input type='text' id='last_name' onChange={this.handleChange} />
+                </div>
+                <div className='input-field'>
+                    <button className='btn pink lighten-1 z-depth-0'>Sign Up</button>
                 </div>
             </form>
         </div>
